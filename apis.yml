@@ -1,8 +1,25 @@
 aid: tourhero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tourhero.png
 name: TourHero
-description: TourHero is a company surfaced as a portfolio company of 500-global, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: TourHero is a social travel platform and end-to-end group trip operations
+  partner that lets creators, coaches, and community leaders host fully customized
+  group trips in 50+ countries, with itinerary design, vetted local operators, payments,
+  and on-the-ground logistics handled by TourHero. Travelers can browse and book
+  public trips on its Explore page, and hosts plan for free while TourHero earns
+  commission from local suppliers. Backed by 500 Global and Lightspeed Venture
+  Partners, it is a consumer platform with no publicly documented developer API
+  surface at this time, though it publishes an llms.txt profile for AI agents.
 url: https://raw.githubusercontent.com/api-evangelist/tourhero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Group Travel
+- Retreats
+- Booking
+- Creator Economy
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +47,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://tourhero.com
+  url: https://www.tourhero.com
+- type: Blog
+  url: https://www.tourhero.com/en/magazine/
+- type: TermsOfService
+  url: https://www.tourhero.com/en/terms
+- type: PrivacyPolicy
+  url: https://www.tourhero.com/en/privacy-policy
+- type: Login
+  url: https://www.tourhero.com/users/sign_in
+- type: GitHubOrganization
+  url: https://github.com/tourhero
+- type: LLMsTxt
+  url: llms/tourhero-llms.txt
+- type: WellKnown
+  url: well-known/tourhero-well-known.yml
+- type: DomainSecurity
+  url: security/tourhero-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

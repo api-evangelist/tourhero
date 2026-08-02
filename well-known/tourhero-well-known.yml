@@ -1,0 +1,31 @@
+name: TourHero Well-Known Endpoints
+generated: 2026-07-21
+method: searched
+source: https://www.tourhero.com
+notes: Probed standard well-known paths on the production host. The site serves a
+  provider-published /llms.txt (saved verbatim in llms/tourhero-llms.txt). The
+  /.well-known/* paths return 403 (edge blocks the path prefix); no security.txt
+  is published at /security.txt (404).
+endpoints:
+- path: /.well-known/security.txt
+  url: https://www.tourhero.com/.well-known/security.txt
+  status: 403
+- path: /security.txt
+  url: https://www.tourhero.com/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  url: https://www.tourhero.com/.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  url: https://www.tourhero.com/.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  url: https://www.tourhero.com/.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  url: https://www.tourhero.com/.well-known/ai-plugin.json
+  status: 403
+- path: /llms.txt
+  url: https://www.tourhero.com/llms.txt
+  status: 200
+  file: ../llms/tourhero-llms.txt
